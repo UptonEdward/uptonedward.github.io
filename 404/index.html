@@ -126,7 +126,7 @@ body.modal-active {
   }
 }
 a {
-  color: #1f6dda;
+  color: #447cc9;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.28s ease;
@@ -2222,7 +2222,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1667248554804),
+    lastupdate: new Date(1667256376761),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2504,7 +2504,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="none" class='cover-wrapper page dock' style="display: none;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="https://vercel.jsdelivr.shupl.icu/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2608,7 +2608,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
     <div align="center"><font size="70">404 Not Found</font></div>
-
 
 
   </div>
@@ -2955,51 +2954,46 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
       <script>
-  volantis.layoutHelper("comments",`<div id="waline"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
-  
-  function pjax_waline() {
-    if(!document.querySelector("#waline"))return;
-    let locale = {};
+  volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  function load_twikoo() {
+    if(!document.querySelectorAll("#twikoo_container")[0])return;
+    volantis.js("/js/twikoo.min.js", pjax_twikoo)
+  }
+  function pjax_twikoo() {
+    if(!document.querySelectorAll("#twikoo_container")[0])return;
     let path = pdata.commentPath;
-    let pagePlaceholder = pdata.commentPlaceholder || "想说点儿什么？";
+    let placeholder = pdata.commentPlaceholder || "想说点儿什么？" || "";
     if (path.length == 0) {
-      let defaultPath = '';
+      let defaultPath = 'window.TWIKOO_MAGIC_PATH||window.location.pathname';
       path = defaultPath || decodeURI(window.location.pathname);
     }
-    if(pagePlaceholder.length != 0) {
-      locale.placeholder = pagePlaceholder;
-    }
-
-    try {
-      Waline.init(Object.assign(Object.assign({"path":null,"placeholder":"想说点儿什么？","serverURL":"https://vercel.waline.shupl.icu/","imageUploader":{"api":null,"token":null,"resp":null},"pageview":true,"comment":true,"imageHosting":"https://7bu.top/api/upload","dark":false,"requiredMeta":["nick","mail"],"copyright":false}, {
-        el: '#waline',
-        path: path,
-        // https://github.com/volantis-x/hexo-theme-volantis/issues/713
-        
-        locale,
-      }),pdata.commentConfig));
-    } catch (error) {
-      alert(`Waline ${error}`)
-    }
-    fancybox_waline()
+    twikoo.init(Object.assign(Object.assign({"path":"window.TWIKOO_MAGIC_PATH||window.location.pathname","envId":"https://vercel.twikoo.shupl.icu/","placeholder":"想说点儿什么？","visitor":false,"copyright":false}, {
+      el: '#twikoo_container',
+      path: path,
+      placeholder: placeholder,
+      onCommentLoaded: function() {
+        if(typeof VolantisFancyBox === "undefined") {
+          const checkFancyBox = setInterval(() => {
+            if(typeof VolantisFancyBox === "undefined") return;
+            clearInterval(checkFancyBox);
+            VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
+          })
+        } else {
+          VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
+        }
+      }
+    }),pdata.commentConfig))
   }
-
-  function fancybox_waline() {
-    if(typeof VolantisFancyBox === "undefined") {
-      const checkFancyBox = setInterval(() => {
-        if(typeof VolantisFancyBox === "undefined") return;
-        clearInterval(checkFancyBox);
-        VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
-      })
+  load_twikoo();
+  volantis.pjax.push(()=>{
+    if (typeof twikoo == "undefined") {
+      load_twikoo();
     } else {
-      VolantisFancyBox.bind('#waline .wl-content img:not(.wl-emoji)');
+      pjax_twikoo();
     }
-  }
-
-  volantis.css('/css/waline.css')
-  volantis.js('/js/waline.js').then(pjax_waline)
-  volantis.pjax.push(pjax_waline);
+  },'twikoo');
 </script>
+
     
 
 
