@@ -1,3 +1,4 @@
+https://blog.shupl.icu/movetopaas/
 https://blog.shupl.icu/tags/
 https://blog.shupl.icu/hello-world/
 https://blog.shupl.icu/categories/
@@ -7,3 +8,13 @@ https://blog.shupl.icu/404
 https://blog.shupl.icu/
 https://blog.shupl.icu/tags/%E5%85%B3%E4%BA%8E%E6%88%91/
 https://blog.shupl.icu/tags/%E7%94%9F%E6%B4%BB/
+https://blog.shupl.icu/tags/%E5%BB%BA%E7%AB%99/
+https://blog.shupl.icu/tags/Hexo/
+https://blog.shupl.icu/tags/PaaS/
+https://blog.shupl.icu/tags/Vercel/
+https://blog.shupl.icu/tags/Netlify/
+https://blog.shupl.icu/tags/Render/
+https://blog.shupl.icu/tags/Railway/
+https://blog.shupl.icu/tags/Cloudflare/
+https://blog.shupl.icu/tags/GitHub/
+https://blog.shupl.icu/tags/Google/
