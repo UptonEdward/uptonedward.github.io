@@ -1559,7 +1559,7 @@ svg.loading {
   line-height: normal;
 }
 #l_main .post .article-meta#top {
-  margin-top: 16px;
+  margin-top: 0px;
   margin-bottom: 32px;
 }
 #l_main .post .article-meta#bottom {
