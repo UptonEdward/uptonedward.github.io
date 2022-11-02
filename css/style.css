@@ -1437,7 +1437,7 @@ svg.loading {
   -ms-transform: translateY(0) scale(1);
 }
 #l_body #s-top.show.hl {
-  color: #fff;
+  color: var(--color-meta);
   background: var(--color-card);
   box-shadow: 0 6px 12px 0px rgba(0,0,0,0.05), 0 6px 12px 0px rgba(0,0,0,0.05), 0 3px 6px 0px rgba(0,0,0,0.05), 0 6px 12px 0px rgba(0,0,0,0.05);
   -webkit-box-shadow: 0 6px 12px 0px rgba(0,0,0,0.05), 0 6px 12px 0px rgba(0,0,0,0.05), 0 3px 6px 0px rgba(0,0,0,0.05), 0 6px 12px 0px rgba(0,0,0,0.05);
@@ -1450,9 +1450,10 @@ svg.loading {
     -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
   }
   #l_body #s-top:hover.hl {
+    color: #fff;
+    background: #447cc9;
     box-shadow: 0 6px 12px 0px rgba(0,0,0,0.05), 0 6px 12px 0px rgba(0,0,0,0.05), 0 3px 6px 0px rgba(0,0,0,0.05), 0 6px 12px 0px rgba(0,0,0,0.05);
     -webkit-box-shadow: 0 6px 12px 0px rgba(0,0,0,0.05), 0 6px 12px 0px rgba(0,0,0,0.05), 0 3px 6px 0px rgba(0,0,0,0.05), 0 6px 12px 0px rgba(0,0,0,0.05);
-    background: #447cc9;
   }
 }
 #l_main {
