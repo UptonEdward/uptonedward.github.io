@@ -1,8 +1,7 @@
-https://blog.shupl.icu/hello-world/
-https://blog.shupl.icu/tags/
 https://blog.shupl.icu/categories/
-https://blog.shupl.icu/link/
+https://blog.shupl.icu/tags/
 https://blog.shupl.icu/friends/
+https://blog.shupl.icu/hello-world/
 https://blog.shupl.icu/404
 https://blog.shupl.icu/
 https://blog.shupl.icu/tags/%E5%85%B3%E4%BA%8E%E6%88%91/
