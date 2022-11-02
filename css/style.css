@@ -2254,6 +2254,7 @@ img.lazyload:not(.placeholder).loaded {
 }
 .meta-v3 time {
   font-size: 0.875rem;
+  margin-bottom: -9px;
 }
 .meta-v3 .category-link {
   font-size: 0.875rem;
@@ -2266,12 +2267,14 @@ img.lazyload:not(.placeholder).loaded {
 }
 .meta-v3 .readmore {
   font-size: 0.875rem;
-  color: var(--color-meta);
+  color: #1f6dda;
+  margin-bottom: -9px;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
 }
 .meta-v3 .avatar {
   line-height: 0;
+  margin-bottom: -9px;
   margin-right: 0.75em;
 }
 .meta-v3 .avatar img {
