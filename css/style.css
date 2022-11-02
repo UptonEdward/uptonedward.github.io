@@ -2265,7 +2265,10 @@ img.lazyload:not(.placeholder).loaded {
   color: #447cc9;
 }
 .meta-v3 .readmore {
-  font-weight: bold;
+  font-size: 0.875rem;
+  color: var(--color-meta);
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 .meta-v3 .avatar {
   line-height: 0;
