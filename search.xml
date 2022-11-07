@@ -4,43 +4,6 @@
   
     
     <entry>
-      <title>Why VPS when you got PaaS?</title>
-      <link href="/movetopaas/"/>
-      <url>/movetopaas/</url>
-      
-        <content type="html"><![CDATA[<div class="story post-story"><h2 id="菩萨庙的历史">菩萨庙的历史</h2><p>菩萨庙本来是我在甲骨文云上搭建的网盘程序 AList 所用的名字，方便我浏览下载存放在 OneDrive 影片。</p><p>后来甲骨文春川突然绕路了，到大陆延迟大增。我看着 AList 那个转圈圈，不得已又把小庙迁到了狗云。较为低廉的价格和较为稳定的线路让狗云一度成为我在那段时间的文件服务器、多个反代站和网盘的家，可谓是菩萨住进了 “狗窝”。</p><p>当然，没有说狗云不好的意思，它确实以一个相对不错的价格为许多人提供了有一定质量的服务。但他们的服务也就仅限于此：给你个机器。网络线路是 “Best Effort”, 运维是 “Best Effort”，安全是 “Best Effort”，稳定性是 “Best Effort”，性能是 “Best Effort”，甚至连 “Best Effort” 都不是。</p></div>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 建站 </tag>
-            
-            <tag> Hexot </tag>
-            
-            <tag> PaaS </tag>
-            
-            <tag> Vercel </tag>
-            
-            <tag> Netlify </tag>
-            
-            <tag> Render </tag>
-            
-            <tag> Railway </tag>
-            
-            <tag> Cloudflare </tag>
-            
-            <tag> GitHub </tag>
-            
-            <tag> Google </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>你好，世界</title>
       <link href="/hello-world/"/>
       <url>/hello-world/</url>
