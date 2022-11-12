@@ -1,3 +1,4 @@
+https://blog.shupl.icu/%E6%9C%80%E5%90%8E%E7%9A%84%E5%9F%8E%E5%B8%82%E4%B8%8E%E6%9C%80%E5%90%8E%E7%9A%84%E4%BA%BA/
 https://blog.shupl.icu/hello-world/
 https://blog.shupl.icu/categories/
 https://blog.shupl.icu/tags/
@@ -6,3 +7,9 @@ https://blog.shupl.icu/404
 https://blog.shupl.icu/
 https://blog.shupl.icu/tags/%E5%85%B3%E4%BA%8E%E6%88%91/
 https://blog.shupl.icu/tags/%E7%94%9F%E6%B4%BB/
+https://blog.shupl.icu/tags/%E4%BA%BA/
+https://blog.shupl.icu/tags/%E5%9F%8E%E5%B8%82/
+https://blog.shupl.icu/tags/%E5%B9%BF%E5%B7%9E/
+https://blog.shupl.icu/tags/%E5%8A%A8%E6%80%81%E6%B8%85%E9%9B%B6/
+https://blog.shupl.icu/tags/%E5%B8%B8%E6%80%81%E5%8C%96/
+https://blog.shupl.icu/tags/%E4%B8%AD%E5%9B%BD/
